@@ -1,0 +1,63 @@
+/* ===== 템플릿 B: 사이드 목차 강의노트 (본문은 세로 스크롤 한 방향) ===== */
+.shell{max-width:1240px;margin:0 auto;padding:0 clamp(16px,3.6vw,40px);
+  display:grid;grid-template-columns:270px minmax(0,1fr);gap:clamp(28px,4vw,60px);align-items:start}
+
+/* ── 사이드바 (데스크톱에서만 화면에 붙는다. 본문 위에 겹치지 않는 좌측 컬럼) ── */
+.side{position:sticky;top:0;max-height:100dvh;overflow-y:auto;padding:34px 0 40px;
+  display:flex;flex-direction:column;gap:20px;scrollbar-width:thin}
+.side-brand .kicker{margin:0 0 8px}
+.side-brand h1{margin:0;font-family:var(--font-display);font-size:1.22rem;font-weight:850;
+  letter-spacing:-.03em;line-height:1.35}
+.side-brand .subtitle{margin:8px 0 0;font-size:.82rem;color:var(--ink-sub);line-height:1.6}
+
+.toc{list-style:none;margin:0;padding:0;display:grid;gap:1px}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:8px 10px;border-radius:9px;
+  color:var(--ink-sub);text-decoration:none;font-size:.855rem;line-height:1.5;border-left:2px solid transparent}
+.toc a:hover{background:var(--surface-2);color:var(--ink)}
+.toc a.cur{background:var(--accent-tint);color:var(--accent);font-weight:700;border-left-color:var(--accent)}
+.toc .n{font-family:var(--font-mono);font-size:.7rem;opacity:.75;flex:none;width:1.5em}
+.side .toolbar{gap:6px}
+.side .btn{font-size:.78rem;padding:.42em .8em}
+.side .search{max-width:none;flex:1 1 100%}
+
+/* ── 본문 ── */
+.doc{padding:clamp(30px,5vw,64px) 0 clamp(56px,9vw,110px);min-width:0}
+.doc-head{padding-bottom:26px;border-bottom:2px solid var(--ink);margin-bottom:6px}
+.doc-head h2{margin:0;font-family:var(--font-display);font-size:clamp(1.7rem,3.6vw,2.5rem);
+  font-weight:900;letter-spacing:-.04em;line-height:1.2;max-width:26ch;text-wrap:balance}
+.doc-head .lead{margin:18px 0 0;max-width:66ch;font-size:1.04rem;color:var(--ink)}
+.doc-head .lead p:last-child{margin-bottom:0}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:24px}
+.stat b{display:block;font-family:var(--font-mono);font-size:1.5rem;font-weight:700;color:var(--accent);
+  line-height:1.15;font-variant-numeric:tabular-nums}
+.stat span{font-size:.72rem;color:var(--ink-sub);letter-spacing:.06em;text-transform:uppercase}
+
+/* 카드 대신 괘선 구획 — 문서/노트 느낌 */
+.doc .sec{background:none;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;
+  padding:clamp(28px,3.4vw,42px) 0;scroll-margin-top:20px}
+.doc .sec-summary{max-width:70ch;border-left:3px solid var(--accent);padding-left:18px}
+.doc .sec-summary p:last-child{margin-bottom:0}
+.doc .keys{max-width:70ch;background:color-mix(in srgb,var(--accent) 4%,var(--surface-2))}
+.doc .panel-in{max-width:74ch}
+.doc .sec-num{background:none;padding:0;font-size:1.02rem;font-weight:800;opacity:.65;width:2.2em}
+.doc .sec-title{font-size:clamp(1.2rem,2.4vw,1.62rem)}
+
+.foot{border-top:1px solid var(--line);margin-top:10px;padding:22px 0 44px;
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.78rem;color:var(--ink-sub)}
+
+/* ── 모바일: 사이드바를 본문 위에 그대로 쌓는다 (고정·접힘 없음) ── */
+@media (max-width:900px){
+  .shell{grid-template-columns:1fr;gap:0}
+  .side{position:static;max-height:none;overflow:visible;padding:26px 0 18px;
+    border-bottom:1px solid var(--line)}
+  .doc{padding-top:26px}
+}
+.skip{position:absolute;left:-9999px}
+.skip:focus{position:static;display:inline-block;margin:8px;padding:8px 14px;background:var(--accent);color:#fff;border-radius:8px}
+
+@media print{
+  .shell{display:block;max-width:none;padding:0}
+  .doc{padding:0;min-width:0}
+  .doc-head{border-bottom-width:1px}
+  .doc .sec{padding:20px 0}
+}

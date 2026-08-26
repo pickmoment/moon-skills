@@ -1,0 +1,198 @@
+{
+  "title": "픽토그램 쓰는 법",
+  "theme": "midnight",
+  "bg": "plain",
+  "beats": [
+    {
+      "say": "기본 아이소타입에 반 칸까지.",
+      "scene": {
+        "type": "pictograph",
+        "title": "열 명 중 넉 명",
+        "total": 100,
+        "filled": 41.5,
+        "icon": "사람",
+        "chunk": 10,
+        "label": "첫 달에 떠난다",
+        "caption": "반 칸은 소수점"
+      }
+    },
+    {
+      "say": "그룹으로 나눠 채우기.",
+      "scene": {
+        "type": "pictograph",
+        "title": "100명이 어디로 갔나",
+        "total": 100,
+        "chunk": 10,
+        "groups": [
+          {
+            "label": "계속 구독",
+            "value": 59,
+            "icon": "usercheck"
+          },
+          {
+            "label": "광고 요금제로",
+            "value": 26,
+            "icon": "user",
+            "tone": "accent2"
+          },
+          {
+            "label": "완전 이탈",
+            "value": 15,
+            "icon": "userplus",
+            "tone": "muted"
+          }
+        ]
+      }
+    },
+    {
+      "say": "여기서 한 번 쉬어 갑니다.",
+      "scene": {
+        "type": "hero",
+        "text": "숫자는 **세어 볼 때** 남는다"
+      }
+    },
+    {
+      "say": "두 시점 비교.",
+      "scene": {
+        "type": "pictograph",
+        "title": "2년 사이",
+        "size": "sm",
+        "chunk": 10,
+        "rows": [
+          {
+            "label": "2022",
+            "total": 100,
+            "filled": 22,
+            "value": "22%"
+          },
+          {
+            "label": "2024",
+            "total": 100,
+            "filled": 41,
+            "value": "41%",
+            "tone": "accent2"
+          }
+        ],
+        "caption": "첫 달 이탈률"
+      }
+    },
+    {
+      "say": "작은 표본은 크게.",
+      "scene": {
+        "type": "pictograph",
+        "title": "팀 10명 중 3명",
+        "total": 10,
+        "filled": 3,
+        "icon": "사람",
+        "size": "lg",
+        "label": "온보딩을 맡는다"
+      }
+    },
+    {
+      "say": "아이콘 스타일 solid.",
+      "scene": {
+        "type": "cards",
+        "title": "세 가지 축",
+        "iconStyle": "solid",
+        "items": [
+          {
+            "icon": "돈",
+            "text": "비용"
+          },
+          {
+            "icon": "시간",
+            "text": "시간",
+            "tone": "b"
+          },
+          {
+            "icon": "사람들",
+            "text": "사람",
+            "tone": "c"
+          }
+        ]
+      }
+    },
+    {
+      "say": "아이콘 스타일 chip.",
+      "scene": {
+        "type": "cards",
+        "title": "세 가지 축",
+        "iconStyle": "chip",
+        "items": [
+          {
+            "icon": "로켓",
+            "text": "성장"
+          },
+          {
+            "icon": "경고",
+            "text": "위험",
+            "tone": "b"
+          },
+          {
+            "icon": "목표",
+            "text": "목표",
+            "tone": "c"
+          }
+        ]
+      }
+    },
+    {
+      "say": "막대와 타임라인에도 아이콘.",
+      "scene": {
+        "type": "bars",
+        "title": "채널별 비용",
+        "unit": "천원",
+        "items": [
+          {
+            "label": "검색",
+            "value": 42,
+            "icon": "검색"
+          },
+          {
+            "label": "소셜",
+            "value": 31,
+            "icon": "공유",
+            "tone": "b2"
+          },
+          {
+            "label": "메일",
+            "value": 18,
+            "icon": "메일",
+            "tone": "mute"
+          },
+          {
+            "label": "추천",
+            "value": 7,
+            "icon": "하트",
+            "tone": "mute"
+          }
+        ]
+      }
+    },
+    {
+      "say": "비교 열에도.",
+      "scene": {
+        "type": "compare",
+        "title": "두 갈래",
+        "columns": [
+          {
+            "title": "구독 유지",
+            "icon": "자물쇠",
+            "items": [
+              "예측 가능",
+              "비용 부담"
+            ]
+          },
+          {
+            "title": "광고 전환",
+            "icon": "방송",
+            "items": [
+              "장벽 없음",
+              "규모 필요"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

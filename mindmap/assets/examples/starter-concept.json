@@ -1,0 +1,70 @@
+{
+  "title": "심리적 안전감",
+  "theme": "sketch",
+  "layout": "map",
+  "density": "standard",
+  "root": {
+    "text": "심리적 안전감",
+    "children": [
+      {
+        "text": "무엇인가",
+        "children": [
+          {
+            "text": "질문해도 안전",
+            "note": "모른다고 말할 수 있다"
+          },
+          "실수를 보고할 수 있다",
+          "반대 의견이 기록된다"
+        ],
+        "icon": "question"
+      },
+      {
+        "text": "왜 필요한가",
+        "color": "teal",
+        "children": [
+          {
+            "text": "학습 속도",
+            "note": "실패가 데이터가 된다"
+          },
+          "숨은 리스크가 일찍 드러난다",
+          "이탈률이 낮아진다"
+        ],
+        "icon": "trendup"
+      },
+      {
+        "text": "무너지는 신호",
+        "color": "coral",
+        "children": [
+          {
+            "text": "회의가 조용하다",
+            "mark": true,
+            "emphasis": "circle"
+          },
+          "나쁜 소식이 늦게 온다",
+          "질문이 사라진다"
+        ],
+        "icon": "warn"
+      },
+      {
+        "text": "만드는 법",
+        "color": "green",
+        "children": [
+          {
+            "text": "리더가 먼저 모른다고 말한다",
+            "children": [
+              "질문으로 회의를 연다"
+            ]
+          },
+          {
+            "text": "실패를 사후분석으로",
+            "note": "사람이 아니라 과정을 본다"
+          },
+          "반대 의견에 고맙다고 말한다"
+        ],
+        "icon": "gear"
+      }
+    ],
+    "icon": "speech"
+  },
+  "backdrop": "gradient"
+}

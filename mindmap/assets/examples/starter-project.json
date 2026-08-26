@@ -1,0 +1,130 @@
+{
+  "title": "뉴스레터 리뉴얼",
+  "theme": "flat",
+  "layout": "right",
+  "density": "detailed",
+  "root": {
+    "text": "뉴스레터 리뉴얼",
+    "note": "3분기 목표",
+    "children": [
+      {
+        "text": "문제",
+        "color": "coral",
+        "children": [
+          {
+            "text": "오픈율 18%",
+            "note": "작년 대비 -7%p",
+            "status": "risk"
+          },
+          {
+            "text": "구독 해지 증가",
+            "badge": "주 120",
+            "status": "risk",
+            "tags": [
+              "주간"
+            ]
+          },
+          "제목이 다 비슷하다"
+        ],
+        "icon": "warn"
+      },
+      {
+        "text": "가설",
+        "color": "purple",
+        "children": [
+          {
+            "text": "발송 시각",
+            "note": "화 07:00 vs 목 12:00"
+          },
+          {
+            "text": "주제 집중",
+            "note": "한 통에 한 주제"
+          },
+          "제목 A/B"
+        ],
+        "icon": "bulb"
+      },
+      {
+        "text": "실행",
+        "color": "blue",
+        "children": [
+          {
+            "text": "1. 데이터 정리",
+            "children": [
+              "최근 20회 지표",
+              "세그먼트 3종"
+            ],
+            "progress": 1,
+            "status": "done"
+          },
+          {
+            "text": "2. 파일럿 4주",
+            "children": [
+              "A안 화 07:00",
+              "B안 목 12:00"
+            ],
+            "progress": 0.45,
+            "status": "doing"
+          },
+          {
+            "text": "3. 판정",
+            "note": "오픈율·클릭률·해지율",
+            "status": "todo"
+          }
+        ],
+        "icon": "clock"
+      },
+      {
+        "text": "리스크",
+        "color": "yellow",
+        "collapsed": true,
+        "children": [
+          "표본이 작다",
+          "계절성 혼입",
+          "해지 증가 시 즉시 중단"
+        ],
+        "icon": "shield"
+      },
+      {
+        "text": "성공 기준",
+        "color": "green",
+        "children": [
+          {
+            "text": "오픈율 25%",
+            "mark": true,
+            "status": "new"
+          },
+          "해지율 유지"
+        ],
+        "icon": "target"
+      }
+    ],
+    "icon": "mail"
+  },
+  "backdrop": "blob",
+  "legend": [
+    {
+      "color": "coral",
+      "label": "위험",
+      "icon": "warn"
+    },
+    {
+      "color": "blue",
+      "label": "진행",
+      "icon": "clock"
+    },
+    {
+      "color": "green",
+      "label": "완료",
+      "icon": "check"
+    }
+  ],
+  "links": [
+    {
+      "from": "r.0.1",
+      "to": "r.3",
+      "label": "원인",
+      "color": "coral"
+    }
+  ]
+}

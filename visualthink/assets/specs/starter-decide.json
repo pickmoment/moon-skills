@@ -1,0 +1,19 @@
+{
+  "title": "결정을 위한 한 장",
+  "density": "standard",
+  "blocks": [
+    { "type": "callout", "icon": "target", "text": "무엇을 정해야 하는가." },
+    { "type": "compare", "columns": [
+      { "title": "안 A", "icon": "check", "items": ["장점", "장점", "비용"] },
+      { "title": "안 B", "icon": "warn", "items": ["장점", "위험", "비용"] }
+    ] },
+    { "type": "matrix", "xLabel": "효과", "yLabel": "난이도",
+      "quadrants": [
+        { "text": "먼저", "note": "쉽고 효과 큼" },
+        { "text": "계획", "note": "어렵지만 효과 큼" },
+        { "text": "덤", "note": "쉽지만 효과 작음" },
+        { "text": "보류", "note": "어렵고 효과 작음" }
+      ] },
+    { "type": "list", "icon": "flag", "items": ["결론", "다음 행동"] }
+  ]
+}

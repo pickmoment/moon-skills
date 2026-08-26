@@ -1,0 +1,9 @@
+{
+  "title": "한 가지 논점",
+  "density": "brief",
+  "blocks": [
+    { "type": "callout", "variant": "bubble", "icon": "bulb", "text": "결론 한 줄." },
+    { "type": "flow", "items": ["원인", "결과", "대응"] },
+    { "type": "list", "icon": "check", "items": ["근거 하나", "근거 둘"] }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "첫 달을 넘겨라",
+  "theme": "neon",
+  "aspect": "9:16",
+  "cps": 5.4,
+  "beats": [
+    {
+      "say": "",
+      "sec": 2,
+      "scene": {
+        "type": "title",
+        "text": "첫 달을 넘겨라",
+        "sub": "구독 이탈의 진짜 지점"
+      }
+    },
+    {
+      "say": "가입자 열 명 중 넉 명이 첫 달에 떠납니다.",
+      "scene": {
+        "type": "stat",
+        "align": "center",
+        "items": [
+          {
+            "value": "41",
+            "unit": "%",
+            "label": "첫 달 이탈률"
+          }
+        ]
+      }
+    },
+    {
+      "say": "그런데 첫 달을 넘긴 사람은 1년을 갑니다.",
+      "scene": {
+        "type": "stat",
+        "align": "center",
+        "items": [
+          {
+            "value": "12",
+            "unit": "개월",
+            "label": "첫 달 생존자의 평균 유지",
+            "tone": "a2"
+          }
+        ]
+      }
+    },
+    {
+      "say": "그래서 예산은 획득이 아니라 첫 달 경험에 씁니다.",
+      "scene": {
+        "type": "hero",
+        "align": "center",
+        "text": "돈은 **첫 달**에 쓴다"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "한 주제를 한 장으로",
+  "subtitle": "설명·학습 자료의 기본 골격",
+  "density": "standard",
+  "blocks": [
+    { "type": "callout", "variant": "bubble", "icon": "bulb",
+      "text": "한 줄로 답부터 말하고, 아래에서 풀어준다." },
+    { "type": "mindmap", "text": "핵심 개념",
+      "branches": [
+        { "text": "갈래 하나", "items": ["세부", "세부"] },
+        { "text": "갈래 둘", "items": ["세부", "세부"] },
+        { "text": "갈래 셋", "items": ["세부"] }
+      ] },
+    { "type": "steps", "items": [
+      { "text": "먼저 할 일", "note": "왜 여기서 시작하는지" },
+      { "text": "다음 단계" },
+      { "text": "마무리" }
+    ] },
+    { "type": "list", "icon": "check", "items": ["기억할 것 하나", "기억할 것 둘"] }
+  ]
+}

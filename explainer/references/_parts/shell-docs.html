@@ -1,0 +1,32 @@
+<a class="skip" href="#doc">본문으로 건너뛰기</a>
+
+<div class="shell">
+  <aside class="side no-print">
+    <div class="side-brand">
+      <p class="kicker" data-kicker></p>
+      <h1 data-title></h1>
+      <p class="subtitle" data-subtitle></p>
+    </div>
+    <nav aria-label="목차"><ul class="toc" data-toc></ul></nav>
+    <div class="toolbar">
+      <div class="search"><input type="search" data-search placeholder="섹션 검색  /" aria-label="섹션 검색"></div>
+      <button class="btn" data-all>전체 펼치기</button>
+      <button class="btn" data-theme title="테마 전환">◐</button>
+      <button class="btn" data-print>인쇄</button>
+    </div>
+  </aside>
+
+  <main class="doc" id="doc">
+    <header class="doc-head">
+      <h2 data-title2></h2>
+      <div class="lead md" data-lead></div>
+      <div class="stats" data-stats></div>
+    </header>
+    <div data-sections></div>
+    <p class="nores" data-nores hidden>검색 결과가 없습니다. <kbd>Esc</kbd> 로 검색을 지웁니다.</p>
+    <footer class="foot">
+      <span data-foot></span>
+      <span class="hint"><kbd>/</kbd> 검색 · <kbd>E</kbd> 전체 펼치기 · <kbd>T</kbd> 테마</span>
+    </footer>
+  </main>
+</div>

@@ -1,0 +1,16 @@
+{
+  "title": "현황 브리핑",
+  "density": "standard",
+  "blocks": [
+    { "type": "stats", "items": [
+      { "value": "72%", "text": "진행률" },
+      { "value": "3건", "text": "미해결" }
+    ] },
+    { "type": "timeline", "items": [
+      { "value": "1월", "text": "착수" },
+      { "value": "4월", "text": "1차 검증" },
+      { "value": "8월", "text": "현재", "emphasis": true }
+    ] },
+    { "type": "callout", "icon": "warn", "text": "지금 막고 있는 것은 이것이다." }
+  ]
+}

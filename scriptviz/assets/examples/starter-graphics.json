@@ -1,0 +1,225 @@
+{
+  "title": "그래픽 장면 모음",
+  "theme": "midnight",
+  "aspect": "16:9",
+  "bg": "blob",
+  "beats": [
+    {
+      "say": "카드 장면입니다.",
+      "scene": {
+        "type": "cards",
+        "title": "무너진 이유 세 가지",
+        "bg": "grid",
+        "items": [
+          {
+            "icon": "won",
+            "text": "획득 비용",
+            "note": "3년 새 2.4배로 올랐다"
+          },
+          {
+            "icon": "users",
+            "text": "이탈률",
+            "note": "첫 달에 41%가 떠난다",
+            "tone": "b"
+          },
+          {
+            "icon": "chart",
+            "text": "콘텐츠 단가",
+            "note": "경쟁이 값을 올렸다",
+            "tone": "c"
+          }
+        ]
+      },
+      "sec": 3.4
+    },
+    {
+      "say": "도넛 장면입니다.",
+      "scene": {
+        "type": "donut",
+        "title": "매출 구성",
+        "unit": "%",
+        "items": [
+          {
+            "label": "구독",
+            "value": 52
+          },
+          {
+            "label": "광고",
+            "value": 31
+          },
+          {
+            "label": "제휴",
+            "value": 12
+          },
+          {
+            "label": "기타",
+            "value": 5
+          }
+        ],
+        "center": {
+          "value": "52%",
+          "label": "아직은 구독"
+        },
+        "caption": "2024년 4분기"
+      },
+      "sec": 3.4
+    },
+    {
+      "say": "추이 장면입니다.",
+      "scene": {
+        "type": "line",
+        "title": "구독자 추이",
+        "xLabels": [
+          "1월",
+          "3월",
+          "5월",
+          "7월",
+          "9월",
+          "11월"
+        ],
+        "series": [
+          {
+            "label": "신규",
+            "values": [
+              120,
+              138,
+              131,
+              150,
+              142,
+              158
+            ]
+          },
+          {
+            "label": "해지",
+            "values": [
+              40,
+              52,
+              61,
+              78,
+              95,
+              121
+            ],
+            "tone": "accent2"
+          }
+        ],
+        "caption": "단위: 천 명"
+      },
+      "sec": 3.4
+    },
+    {
+      "say": "아이소타입 장면입니다.",
+      "scene": {
+        "type": "pictograph",
+        "title": "열 명 중 넉 명",
+        "total": 100,
+        "filled": 41,
+        "icon": "user",
+        "label": "첫 달에 떠난다",
+        "caption": "2024년 코호트"
+      },
+      "sec": 3.4
+    },
+    {
+      "say": "깔때기 장면입니다.",
+      "scene": {
+        "type": "funnel",
+        "title": "가입 퍼널",
+        "unit": "명",
+        "items": [
+          {
+            "label": "방문",
+            "value": 10000
+          },
+          {
+            "label": "가입",
+            "value": 3200
+          },
+          {
+            "label": "첫 결제",
+            "value": 1100
+          },
+          {
+            "label": "3개월 유지",
+            "value": 640
+          }
+        ]
+      },
+      "sec": 3.4
+    },
+    {
+      "say": "매트릭스 장면입니다.",
+      "scene": {
+        "type": "matrix",
+        "title": "무엇부터 할까",
+        "xAxis": [
+          "비용 낮음",
+          "비용 높음"
+        ],
+        "yAxis": [
+          "효과 작음",
+          "효과 큼"
+        ],
+        "quadrants": [
+          {
+            "icon": "bolt",
+            "text": "바로 한다",
+            "note": "온보딩 메일"
+          },
+          {
+            "icon": "target",
+            "text": "계획해서",
+            "note": "가격 개편",
+            "tone": "b"
+          },
+          {
+            "icon": "clock",
+            "text": "나중에",
+            "note": "디자인 리뉴얼",
+            "tone": "mute"
+          },
+          {
+            "icon": "x",
+            "text": "버린다",
+            "note": "신규 채널",
+            "tone": "mute"
+          }
+        ]
+      },
+      "sec": 3.4
+    },
+    {
+      "say": "워터마크와 스태거 테스트.",
+      "scene": {
+        "type": "hero",
+        "watermark": "03",
+        "bg": "rays",
+        "kicker": "결론",
+        "text": "문제는 가격이 아니라 **첫 달**이었다",
+        "sub": "첫 달을 넘기면 1년을 간다"
+      }
+    },
+    {
+      "say": "아이콘 목록입니다.",
+      "scene": {
+        "type": "list",
+        "title": "체크리스트",
+        "bg": "dots",
+        "items": [
+          {
+            "icon": "check",
+            "text": "환영 메일 3통",
+            "note": "1일·3일·7일"
+          },
+          {
+            "icon": "bell",
+            "text": "미사용 알림"
+          },
+          {
+            "icon": "gift",
+            "text": "첫 달 보너스"
+          }
+        ]
+      }
+    }
+  ]
+}
