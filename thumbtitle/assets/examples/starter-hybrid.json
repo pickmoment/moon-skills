@@ -1,0 +1,21 @@
+{
+  "meta": { "topic": "천재가 아니라 시스템", "series": "생산성 다큐",
+    "note": "배경.png 는 AI 생성 배경 자리 — composition.md 의 프롬프트로 만들어 교체한다. 인물을 오른쪽에 두고 왼쪽을 비우게 생성했으면 focus:right." },
+  "theme": "docu",
+  "background": { "type": "image", "src": "배경.png", "focus": "right", "scrim": "auto",
+    "prompt": "YouTube thumbnail background, 16:9. A thoughtful man in his 30s in a dim study, exaggerated contemplative expression, positioned on the RIGHT third of the frame, looking toward the LEFT (toward empty space). LEFT half of the frame is clean dark negative space for text overlay. Dramatic rim lighting, high contrast, cinematic color grade. NO text, NO letters, NO logos." },
+  "elements": [
+    { "id": "kicker", "type": "sub", "text": "아인슈타인도 썼던", "at": "left-top", "size": "m" },
+    { "id": "h1", "type": "headline", "at": "left-center", "size": "l",
+      "lines": ["천재의 비밀은", "시스템이다"], "highlight": ["시스템"] },
+    { "id": "ep", "type": "badge", "text": "다큐 EP.1", "at": "left-bottom", "style": "corner" }
+  ],
+  "variants": [
+    { "name": "A-반전", "title": "천재들은 사실 머리가 좋은 게 아니었습니다", "patch": {} },
+    { "name": "B-방법", "title": "평범한 사람이 천재를 이기는 3가지 시스템",
+      "patch": {
+        "kicker": { "text": "재능 없이 이기는" },
+        "h1": { "lines": ["3가지", "시스템"], "highlight": ["3가지"], "size": "xl" }
+      } }
+  ]
+}

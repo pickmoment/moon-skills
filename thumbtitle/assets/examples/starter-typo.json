@@ -1,0 +1,21 @@
+{
+  "meta": { "topic": "연금계좌 인출 순서", "series": "연금 시리즈 EP.2" },
+  "theme": "impact",
+  "background": { "type": "gradient", "colors": ["#141414", "#2a2a2a"], "angle": 135 },
+  "elements": [
+    { "id": "kicker", "type": "sub", "text": "은퇴 전에 몰랐다가", "at": "left-top", "size": "l", "box": true },
+    { "id": "h1", "type": "headline", "at": "left-center", "size": "xl",
+      "lines": ["세금 2배로", "내는 순서"], "highlight": ["2배"] },
+    { "id": "warn", "type": "sticker", "emoji": "⚠️", "at": "right-center", "size": "l", "rotate": 8 },
+    { "id": "ep", "type": "badge", "text": "EP.2", "at": "right-top", "style": "pill" }
+  ],
+  "variants": [
+    { "name": "A-공포훅", "title": "연금 인출, 순서 하나 바꿨더니 세금이 반으로 줄었습니다",
+      "patch": {} },
+    { "name": "B-질문훅", "title": "연금계좌 3개, 어디서부터 깨야 할까? (정답은 반대입니다)",
+      "patch": {
+        "kicker": { "text": "10명 중 9명이 틀리는" },
+        "h1": { "lines": ["인출 순서", "정답은 반대"], "highlight": ["반대"] }
+      } }
+  ]
+}

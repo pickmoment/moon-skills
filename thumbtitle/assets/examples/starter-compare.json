@@ -1,0 +1,18 @@
+{
+  "meta": { "topic": "ISA vs 연금저축", "series": "절세 시리즈" },
+  "theme": "finance",
+  "background": { "type": "split", "colors": ["#04291a", "#1e1b4b"], "angle": 100 },
+  "elements": [
+    { "id": "l", "type": "headline", "at": "left-center", "size": "l", "lines": ["ISA"], "dy": -60 },
+    { "id": "lsub", "type": "sub", "text": "3년 뒤 자유", "at": "left-center", "size": "l", "dy": 60, "box": true },
+    { "id": "r", "type": "headline", "at": "right-center", "size": "l", "lines": ["연금저축"], "dy": -60 },
+    { "id": "rsub", "type": "sub", "text": "55세 잠금", "at": "right-center", "size": "l", "dy": 60, "box": true },
+    { "id": "vs", "type": "sticker", "emoji": "⚔️", "at": "center-center", "size": "l" },
+    { "id": "q", "type": "sub", "text": "당신의 돈은 어디로?", "at": "center-bottom", "size": "l" }
+  ],
+  "variants": [
+    { "name": "A-대결", "title": "ISA vs 연금저축, 세금 계산해 보면 승자가 갈립니다", "patch": {} },
+    { "name": "B-순서", "title": "ISA와 연금저축, 뭐부터 채워야 할까 (월 50만원 기준)",
+      "patch": { "q": { "text": "뭐부터 채울까?" } } }
+  ]
+}
